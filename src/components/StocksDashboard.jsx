@@ -20,9 +20,11 @@ function StocksDashboard() {
   };
 
   return (
-    <div>
-      <input type="text" placeholder="SYMB" value={searchTerm} onChange={handleStocksInputChange} />
-      <StocksList stocks={stocks} />
+    <div className="w-full mx-auto lg:w-2/3 2xl:w-1/3 flex flex-col space-y-2">
+      <input type="text" placeholder="SYMBL" value={searchTerm} onChange={handleStocksInputChange} className="w-full border-2 border-slate-700 bg-[#21252b] text-slate-200 rounded-md p-2" />
+      <div className="w-full">
+        <StocksList stocks={stocks} />
+      </div>
     </div>
   );
 }
