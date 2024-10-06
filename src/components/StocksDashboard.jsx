@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import StocksList from "./StocksList";
 
 function StocksDashboard() {
-  [stocks, setStocks] = useState([]);
+  const [stocks, setStocks] = useState([]);
 
   const handleChange = async (event) => {
     const stocksRes = await fetch('http://localhost:3000/' + new URLSearchParams({ query: event.target.value }));
