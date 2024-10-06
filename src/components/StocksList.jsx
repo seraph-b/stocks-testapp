@@ -10,7 +10,7 @@ function StocksList({ stocks }) {
   );
 }
 
-function StocksItem({ stock }) {
+function StocksItem(stock) {
   return (
     <li>
       {stock.symbol} - ${stock.price} - {stock.timestamp}
