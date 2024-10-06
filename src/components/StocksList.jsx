@@ -13,7 +13,7 @@ function StocksList({ stocks }) {
 function StocksItem(stock) {
   return (
     <li>
-      {stock.symbol} - ${stock.price} - {stock.timestamp}
+      {stock.symbol} - ${stock.price} - {new Date(stock.timestamp).toLocaleDateString("en-GB", { timzeone: "GMT+1" })} {new Date(stock.timestamp).toLocaleTimeString("en-GB", { timzeone: "GMT+2" })}
     </li>
   );
 }
