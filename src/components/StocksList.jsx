@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import StocksItem from './StocksItem';
 
 function StocksList({ stocks }) {
@@ -24,4 +25,4 @@ function StocksList({ stocks }) {
   );
 }
 
-export default StocksList;
+export default memo(StocksList);
